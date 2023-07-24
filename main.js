@@ -7,10 +7,18 @@ const mailAccettate = [
   "genoveffa@gmail.com",
 ];
 
+let trovato = false;
+
 for (let i = 0; i < mailAccettate.length; i++) {
   if (askMail == mailAccettate[i]) {
-    alert("benvenuto");
+    trovato = true;
   }
+}
+
+if (trovato) {
+  alert("benvenuto");
+} else {
+  alert("rifiutato");
 }
 
 // const number = prompt("inserisci un numero da 1 a 6");
